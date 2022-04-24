@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<title>Kasvimaan perustaminen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS2.css">
+<link rel="stylesheet" href="CSS1.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar theme top left-align large">
+    <a class="bar-item button right hide-large hover-white large theme-l1" href="javascript:void(0)" onclick="open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="bar-item button theme-l1">Etusivu</a>
+    <a href="perustaminen.html" class="bar-item button hide-small hover-white">Perustaminen</a>
+    <a href="kevat.html" class="bar-item button hide-small hover-white">Kevät</a>
+    <a href="kesa.html" class="bar-item button hide-small hover-white">Kesä</a>
+    <a href="syksy.html" class="bar-item button hide-small hover-white">Syksy</a>
+  </div>
+</div>
+
+
+  <div class="row padding-64">
+        <div class="third container">
+      <p class="border padding-large padding-64 center"><img src="kasvilava.syksy.png" alt="kuihtuneet kasvit kasvilavalla" style="width:100%"></p>
+    </div>
+    <div class="twothird container">
+      <h1 class="text-teal">Valmistautuminen talveen</h1>
+      <p>Syksyn tullen kasvit on aika kerätä viimeiset sadot. Herkimmät kasvit menetetään ensimmäisten yöpakkasten koittaessa, mutta esim. juurekset kestävät hyvin pientä pakkasta. 
+      </p>
+      <p>Kun sato on korjattu, voit siivota kuolleet kasvivarret ja suurimmat roskat pois. Maatuvat osat voi myös jättää talveksi kasvimaalle.
+          Mikäli sinulla on monivuotisia kasveja voit lehittää kuivia lehtiä tai taittaa muiden kasvien varsia talven suojaksi. </p>
+        <p></p>
+        <p></p>
+    </div>
+  </div>
+ 
+
+  <footer id="myFooter">
+    <div class="container theme-l2 padding-32">
+      <h4>Kuvien käyttö ilman lupaa kielletty</h4>
+    </div>
+
+    <div class="container theme-l1">
+      <p> <a href="" target="_blank"></a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
