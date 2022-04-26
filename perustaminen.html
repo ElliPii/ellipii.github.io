@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<title>Kasvimaan perustaminen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS2.css">
+<link rel="stylesheet" href="CSS1.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar theme top left-align large">
+    <a href="index.html" class="bar-item button">Etusivu</a>
+    <a href="perustaminen.html" class="bar-item button hide-small">Perustaminen</a>
+    <a href="kevat.html" class="bar-item button hide-small">Kevät</a>
+    <a href="kesa.html" class="bar-item button hide-small">Kesä</a>
+    <a href="syksy.html" class="bar-item button hide-small">Syksy</a>
+    <a href="javascript:void(0)" class="bar-item button right hide-large hover-white large theme-l1" onclick="myFunction()">&#9776;</a>
+  </div>
+</div>
+<div id="demo" class="bar-block theme-l1 hide hide-large hide-medium">
+  <a href="index.html" class="bar-item button">Etusivulle</a>
+  <a href="perustaminen.html" class="bar-item button">Perustaminen</a>
+  <a href="kevat.html" class="bar-item button">Kevät</a>
+  <a href="kesa.html" class="bar-item button">Kesä</a>
+  <a href="syksy.html" class="bar-item button">Syksy</a>
+</div>
+
+
+  <div class="row padding-64">
+        <div class="third container">
+      <p class="border padding-large padding-64 center"><img src="kasvilava.perustus.jpg" alt="Kasvimaata kaivamassa" style="width:100%"></p>
+    </div>
+    <div class="twothird container">
+      <h1 class="text-teal">Paikka ja pohjatyöt</h1>
+      <p>Paras paikka kasvimaalle on lämmin aurinkoinen tai puolivarjoisa paikka. Lämpö ja riittävä valo varmistaa, että sato ehtii kypsyä kasvukauden loppuun mennessä. Myös varjoisammalle paikalle voi perustaa kasvimaan, mutta silloin ei kannata viljellä kovin pitkää kypsymistä vaativia lajikkeita.
+          Helpointa on perustaa kasvimaa tasaiselle paikalle. Mittaa vilejelykehikon kokoinen alue. Kaiva lapiolla hieman pinta maata pois, varsinkin jos alla on uuta kasvillisuutta esim. nurmikkoa. Kaiva hieman laajemmalta alueelta kuin mitä viljelykehikon reunus on.
+      </p>
+      <p>Kun pohja on valmis, aseta viljelykehikko paikoilleen. Kehikoita voi pinota myös useamman päällekkäin, jolloin saat kasvimaahan syvyyttä eikä sinun tarvitse kyykkiä niin alhaalla sitä hoitaessasi. Suositus on asettaa pohjalle suodatinkangas. Suodatinkangas estää muiden kasvien juurien pääsyn viljelykehikolle eli ehkäisee rikkaruohoja kasvimaalla. 
+          Viljelukehikoille löytyy valmiiksi sen muotoon ja kokoon sopivia suodatinkankaita, jotka nousevat osoittain reunaa pitkin ylös, jolloin se suojaa myös viljelykehikkoa ja pidentää sen käyttöikää. Voit yhtälailla ostaa myös metritavaraa ja 
+          leikata itse sopivan kokoisen palan ja asetella sen kehikon pohjalle. Voit niitata tai naulata reunat kiinni kehikkoon muutamasta kohtaa, jolloin kangas pysyy paremmin paikoillaan kun sitä aletaan täyttämään. </p>
+        <p>Seuraavaksi viljelykehikko täytetään mullalla. Peruspuutarhamulta käy kasvimaalle. Halutessasi voit hankkia rakeista puutarhalannoitetta ja sekoittaa pakkauksen ohjeen mukaan mullan sekaan täyttämisen yhteydessä
+           Tuoreessa mullassa on itsessään myös vielä paljon ravinteita, joten tässä kohtaa lisäravinteen sekoittaminen multaan ei ole välttämätöntä. Kasvimaata lannoitetaan myös säännöllisesti kasvukauden aikana. Täytä kehikko lähes yläreunaan asti. Multa tiivistyy ja painuu kasaan sateiden ja istustuten myötä.
+        </p>
+        <h2>Kasvimaasi on nyt valmis viljelyyn!</h2>
+    </div>
+  </div>
+ 
+
+  <footer id="myFooter">
+    <div class="container theme-l2 padding-32">
+      <h4>Kuvien käyttö ilman lupaa kielletty</h4>
+    </div>
+
+    <div class="container theme-l1">
+      <p> <a href="" target="_blank"></a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("demo");
+    if (x.className.indexOf("show") == -1) {
+      x.className += " show";
+    } else { 
+      x.className = x.className.replace(" show", "");
+    }
+  }
+</script>
+
+</body>
+</html>
